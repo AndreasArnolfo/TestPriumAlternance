@@ -235,3 +235,1387 @@ Processing by BooksController#new as HTML
 Completed 200 OK in 57ms (Views: 34.8ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/books/new" for 127.0.0.1 at 2019-07-03 16:13:58 +0200
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (3.3ms)
+  Rendered books/new.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 37ms (Views: 25.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2019-07-03 16:14:10 +0200
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EWftpIaP9vaPlqrGGZPFCetS1tRQjpzZwKIx1rSzjn9E0dR03uxjN45kyiIZGXnrbrzY6CyziJxG24oK2WHi7Q==", "book"=>{"name"=>"First Book", "published_date(1i)"=>"2019", "published_date(2i)"=>"7", "published_date(3i)"=>"3", "description"=>"une desciption", "author_name"=>"andreas arnolfo", "page_number"=>"3"}, "commit"=>"Create Book"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `Book' for nil:NilClass):
+  
+app/controllers/books_controller.rb:27:in `create'
+Started GET "/books/new" for 127.0.0.1 at 2019-07-03 16:16:10 +0200
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (3.8ms)
+  Rendered books/new.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 44ms (Views: 33.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2019-07-03 16:16:23 +0200
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gPufW+vZhBDOewRSHNtXYtiTUkFpie210zlRg+hxSOTVTaaLs7oR0c+JZLYcUeuAXX1cfRW0+fBVQOpfhaMkdg==", "book"=>{"name"=>"First Book", "published_date(1i)"=>"2019", "published_date(2i)"=>"7", "published_date(3i)"=>"3", "description"=>"une desciption", "author_name"=>"andreas arnolfo", "page_number"=>"5"}, "commit"=>"Create Book"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `Book' for nil:NilClass):
+  
+app/controllers/books_controller.rb:27:in `create'
+Started POST "/books" for 127.0.0.1 at 2019-07-03 16:16:53 +0200
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gPufW+vZhBDOewRSHNtXYtiTUkFpie210zlRg+hxSOTVTaaLs7oR0c+JZLYcUeuAXX1cfRW0+fBVQOpfhaMkdg==", "book"=>{"name"=>"First Book", "published_date(1i)"=>"2019", "published_date(2i)"=>"7", "published_date(3i)"=>"3", "description"=>"une desciption", "author_name"=>"andreas arnolfo", "page_number"=>"5"}, "commit"=>"Create Book"}
+Completed 500 Internal Server Error in 133ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `author' for #<BooksController:0x00007fef9be4eae8>):
+  
+app/controllers/books_controller.rb:27:in `create'
+Started POST "/books" for 127.0.0.1 at 2019-07-03 16:17:02 +0200
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gPufW+vZhBDOewRSHNtXYtiTUkFpie210zlRg+hxSOTVTaaLs7oR0c+JZLYcUeuAXX1cfRW0+fBVQOpfhaMkdg==", "book"=>{"name"=>"First Book", "published_date(1i)"=>"2019", "published_date(2i)"=>"7", "published_date(3i)"=>"3", "description"=>"une desciption", "author_name"=>"andreas arnolfo", "page_number"=>"5"}, "commit"=>"Create Book"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:30
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:30
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (5.6ms)
+  Rendered books/new.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 76ms (Views: 37.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-03 16:17:17 +0200
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:18
+  Rendered books/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 38ms (Views: 35.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2019-07-03 16:17:20 +0200
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (6.2ms)
+  Rendered books/new.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 44ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2019-07-03 16:17:30 +0200
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+t1CCb11xVJliWYzhbRKr4PMu2Icu97EfHDzasPfbsjgRKetkSiCyOmV3vTs4IobVozzwUqlUbuEYS3aPRuhxA==", "book"=>{"name"=>"First Book", "published_date(1i)"=>"2019", "published_date(2i)"=>"7", "published_date(3i)"=>"3", "description"=>"une desciption", "author_name"=>"andreas arnolfo", "page_number"=>"3"}, "commit"=>"Create Book"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:30
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:30
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (4.1ms)
+  Rendered books/new.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 32ms (Views: 28.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-03 16:18:51 +0200
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:18
+  Rendered books/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 28ms (Views: 23.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-03 16:18:52 +0200
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:18
+  Rendered books/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+Completed 200 OK in 28ms (Views: 26.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2019-07-03 16:18:53 +0200
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (4.8ms)
+  Rendered books/new.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 45ms (Views: 34.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2019-07-03 16:19:06 +0200
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yAXhXbIlqMJZkTKm2xijy+dyHe6diVe9OC2BkrqJFrLSnAT5nnjvWNWNimGyTGN/MjJVTcuX2MLAPF8iRE3Zvg==", "book"=>{"name"=>"First Book", "published_date(1i)"=>"2019", "published_date(2i)"=>"7", "published_date(3i)"=>"3", "description"=>"une description", "author_name"=>"andreas arnolfo", "page_number"=>"4"}, "commit"=>"Create Book"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:30
+  [1m[36mBook Create (0.7ms)[0m  [1m[32mINSERT INTO "books" ("name", "published_date", "description", "author_name", "page_number", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "First Book"], ["published_date", "2019-07-03"], ["description", "une description"], ["author_name", "andreas arnolfo"], ["page_number", 4], ["created_at", "2019-07-03 14:19:06.075682"], ["updated_at", "2019-07-03 14:19:06.075682"]]
+  ↳ app/controllers/books_controller.rb:30
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/books_controller.rb:30
+Redirected to http://localhost:3000/books/1
+Completed 302 Found in 13ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/books/1" for 127.0.0.1 at 2019-07-03 16:19:06 +0200
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:67
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+Completed 200 OK in 33ms (Views: 27.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2019-07-03 16:19:10 +0200
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:18
+  Rendered books/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 33ms (Views: 30.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2019-07-03 16:20:11 +0200
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:18
+  Rendered books/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 62ms (Views: 59.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2019-07-03 16:20:25 +0200
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:18
+  Rendered books/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 56ms (Views: 53.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2019-07-03 16:20:34 +0200
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:18
+  Rendered books/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 63ms (Views: 61.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2019-07-03 16:20:38 +0200
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:18
+  Rendered books/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2019-07-03 16:20:42 +0200
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:18
+  Rendered books/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 31ms (Views: 28.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/1" for 127.0.0.1 at 2019-07-03 16:20:47 +0200
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:67
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 29ms (Views: 25.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2019-07-03 16:20:49 +0200
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:18
+  Rendered books/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 34ms (Views: 31.6ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mAuthor Load (0.6ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "authors"[0m
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/books" for 127.0.0.1 at 2019-07-03 16:25:25 +0200
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:18
+  Rendered books/index.html.erb within layouts/application (10.4ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 36ms (Views: 31.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2019-07-03 16:25:26 +0200
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:18
+  Rendered books/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2019-07-03 16:25:27 +0200
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (4.3ms)
+  Rendered books/new.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 32ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2019-07-03 16:25:39 +0200
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I8ypR/A3FnM4RB7b9L2w2rjHo3EQ1OdCJAyRvYY3ANY5VUzj3GpR6bRYphyd6XBubYfr0kbKaD3cHU8NePPP2g==", "book"=>{"name"=>"Second Book", "published_date(1i)"=>"2019", "published_date(2i)"=>"7", "published_date(3i)"=>"3", "description"=>"description", "author_name"=>"andreas arnolfo", "page_number"=>"3"}, "commit"=>"Create Book"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `books' for nil:NilClass):
+  
+app/controllers/books_controller.rb:27:in `create'
+Started POST "/books" for 127.0.0.1 at 2019-07-03 16:26:36 +0200
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I8ypR/A3FnM4RB7b9L2w2rjHo3EQ1OdCJAyRvYY3ANY5VUzj3GpR6bRYphyd6XBubYfr0kbKaD3cHU8NePPP2g==", "book"=>{"name"=>"Second Book", "published_date(1i)"=>"2019", "published_date(2i)"=>"7", "published_date(3i)"=>"3", "description"=>"description", "author_name"=>"andreas arnolfo", "page_number"=>"3"}, "commit"=>"Create Book"}
+Completed 500 Internal Server Error in 135ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `author' for #<BooksController:0x00007fefa40d2370>):
+  
+app/controllers/books_controller.rb:27:in `create'
+Started POST "/books" for 127.0.0.1 at 2019-07-03 16:27:29 +0200
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I8ypR/A3FnM4RB7b9L2w2rjHo3EQ1OdCJAyRvYY3ANY5VUzj3GpR6bRYphyd6XBubYfr0kbKaD3cHU8NePPP2g==", "book"=>{"name"=>"Second Book", "published_date(1i)"=>"2019", "published_date(2i)"=>"7", "published_date(3i)"=>"3", "description"=>"description", "author_name"=>"andreas arnolfo", "page_number"=>"3"}, "commit"=>"Create Book"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `Book' for nil:NilClass):
+  
+app/controllers/books_controller.rb:27:in `create'
+Started POST "/books" for 127.0.0.1 at 2019-07-03 16:27:44 +0200
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I8ypR/A3FnM4RB7b9L2w2rjHo3EQ1OdCJAyRvYY3ANY5VUzj3GpR6bRYphyd6XBubYfr0kbKaD3cHU8NePPP2g==", "book"=>{"name"=>"Second Book", "published_date(1i)"=>"2019", "published_date(2i)"=>"7", "published_date(3i)"=>"3", "description"=>"description", "author_name"=>"andreas arnolfo", "page_number"=>"3"}, "commit"=>"Create Book"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `books' for nil:NilClass):
+  
+app/controllers/books_controller.rb:27:in `create'
+Started POST "/books" for 127.0.0.1 at 2019-07-03 16:27:49 +0200
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I8ypR/A3FnM4RB7b9L2w2rjHo3EQ1OdCJAyRvYY3ANY5VUzj3GpR6bRYphyd6XBubYfr0kbKaD3cHU8NePPP2g==", "book"=>{"name"=>"Second Book", "published_date(1i)"=>"2019", "published_date(2i)"=>"7", "published_date(3i)"=>"3", "description"=>"description", "author_name"=>"andreas arnolfo", "page_number"=>"3"}, "commit"=>"Create Book"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `book' for nil:NilClass):
+  
+app/controllers/books_controller.rb:27:in `create'
+Started POST "/books" for 127.0.0.1 at 2019-07-03 16:28:03 +0200
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I8ypR/A3FnM4RB7b9L2w2rjHo3EQ1OdCJAyRvYY3ANY5VUzj3GpR6bRYphyd6XBubYfr0kbKaD3cHU8NePPP2g==", "book"=>{"name"=>"Second Book", "published_date(1i)"=>"2019", "published_date(2i)"=>"7", "published_date(3i)"=>"3", "description"=>"description", "author_name"=>"andreas arnolfo", "page_number"=>"3"}, "commit"=>"Create Book"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `Book' for nil:NilClass):
+  
+app/controllers/books_controller.rb:27:in `create'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/andreasarnolfo/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to FixColumnName (20190703143211)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/andreasarnolfo/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190703143211_fix_column_name.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "abooks" ("id" integer NOT NULL PRIMARY KEY, "name" varchar DEFAULT NULL, "published_date" date DEFAULT NULL, "description" text DEFAULT NULL, "author_name" varchar DEFAULT NULL, "page_number" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "author_id" integer DEFAULT NULL)[0m
+  ↳ db/migrate/20190703143211_fix_column_name.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "abooks" ("id","name","published_date","description","author_name","page_number","created_at","updated_at","author_id")
+                     SELECT "id","name","published_date","description","author_name","page_number","created_at","updated_at","user_id" FROM "books"[0m
+  ↳ db/migrate/20190703143211_fix_column_name.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "books"[0m
+  ↳ db/migrate/20190703143211_fix_column_name.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "books" ("id" integer NOT NULL PRIMARY KEY, "name" varchar DEFAULT NULL, "published_date" date DEFAULT NULL, "description" text DEFAULT NULL, "author_name" varchar DEFAULT NULL, "page_number" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "author_id" integer DEFAULT NULL)[0m
+  ↳ db/migrate/20190703143211_fix_column_name.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "books" ("id","name","published_date","description","author_name","page_number","created_at","updated_at","author_id")
+                     SELECT "id","name","published_date","description","author_name","page_number","created_at","updated_at","author_id" FROM "abooks"[0m
+  ↳ db/migrate/20190703143211_fix_column_name.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "abooks"[0m
+  ↳ db/migrate/20190703143211_fix_column_name.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190703143211"]]
+  ↳ /Users/andreasarnolfo/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/andreasarnolfo/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/andreasarnolfo/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/andreasarnolfo/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/andreasarnolfo/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/andreasarnolfo/.rbenv/versions/2.5.1/bin/rake:23
+Started POST "/books" for 127.0.0.1 at 2019-07-03 16:33:49 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/andreasarnolfo/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I8ypR/A3FnM4RB7b9L2w2rjHo3EQ1OdCJAyRvYY3ANY5VUzj3GpR6bRYphyd6XBubYfr0kbKaD3cHU8NePPP2g==", "book"=>{"name"=>"Second Book", "published_date(1i)"=>"2019", "published_date(2i)"=>"7", "published_date(3i)"=>"3", "description"=>"description", "author_name"=>"andreas arnolfo", "page_number"=>"3"}, "commit"=>"Create Book"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `Book' for nil:NilClass):
+  
+app/controllers/books_controller.rb:27:in `create'
+Started GET "/books/new" for 127.0.0.1 at 2019-07-03 16:33:54 +0200
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (3.5ms)
+  Rendered books/new.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 36ms (Views: 24.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-03 16:33:56 +0200
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:18
+  Rendered books/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 32ms (Views: 29.1ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/books/1" for 127.0.0.1 at 2019-07-03 16:33:59 +0200
+Processing by BooksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4yAqXAGw7Jrf5rOjwSWPrbhZXs7G33c+5spG/07wjcO2lhOMWdN5W94U00fBrzNPPbdQ8rriY3tgs/0jIyLhUQ==", "id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:57
+  [1m[36mBook Destroy (0.3ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/books_controller.rb:57
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/books_controller.rb:57
+Redirected to http://localhost:3000/books
+Completed 302 Found in 5ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2019-07-03 16:33:59 +0200
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:18
+  Rendered books/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2019-07-03 16:34:00 +0200
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (4.6ms)
+  Rendered books/new.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 38ms (Views: 34.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2019-07-03 16:34:13 +0200
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bLUuG5UEpBYrrid1CooAoQKkoWHDb+Vy8uAfnmwznQl2LMu/uVnjjKeyn7Jj3sAV1+TpwpVxag0K8cEukvdSBQ==", "book"=>{"name"=>"First Book", "published_date(1i)"=>"2019", "published_date(2i)"=>"7", "published_date(3i)"=>"3", "description"=>"ma description", "author_name"=>"andreas arnolfo", "page_number"=>"1"}, "commit"=>"Create Book"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `Book' for nil:NilClass):
+  
+app/controllers/books_controller.rb:27:in `create'
+Started POST "/books" for 127.0.0.1 at 2019-07-03 16:35:05 +0200
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jlVOFpdjIsVukRTnKB8rAQoxsBdVh7BhTu498kuve1/b43fGzwC3BG9jdAMolZfjj9++Kym6pCTIl4YuJn0XzQ==", "book"=>{"name"=>"First Book", "published_date(1i)"=>"2019", "published_date(2i)"=>"7", "published_date(3i)"=>"3", "description"=>"ma description", "author_name"=>"andreas arnolfo", "page_number"=>"1"}, "commit"=>"Create Book"}
+Completed 500 Internal Server Error in 143ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `author' for #<BooksController:0x00007fef9bd5ce00>):
+  
+app/controllers/books_controller.rb:27:in `create'
+Started POST "/books" for 127.0.0.1 at 2019-07-03 16:40:26 +0200
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jlVOFpdjIsVukRTnKB8rAQoxsBdVh7BhTu498kuve1/b43fGzwC3BG9jdAMolZfjj9++Kym6pCTIl4YuJn0XzQ==", "book"=>{"name"=>"First Book", "published_date(1i)"=>"2019", "published_date(2i)"=>"7", "published_date(3i)"=>"3", "description"=>"ma description", "author_name"=>"andreas arnolfo", "page_number"=>"1"}, "commit"=>"Create Book"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `Book' for nil:NilClass):
+  
+app/controllers/books_controller.rb:27:in `create'
+Started POST "/books" for 127.0.0.1 at 2019-07-03 16:42:13 +0200
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jlVOFpdjIsVukRTnKB8rAQoxsBdVh7BhTu498kuve1/b43fGzwC3BG9jdAMolZfjj9++Kym6pCTIl4YuJn0XzQ==", "book"=>{"name"=>"First Book", "published_date(1i)"=>"2019", "published_date(2i)"=>"7", "published_date(3i)"=>"3", "description"=>"ma description", "author_name"=>"andreas arnolfo", "page_number"=>"1"}, "commit"=>"Create Book"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `books' for nil:NilClass):
+  
+app/controllers/books_controller.rb:27:in `create'
+Started GET "/" for 127.0.0.1 at 2019-07-03 16:42:21 +0200
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:18
+  Rendered books/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 33ms (Views: 28.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-03 16:42:22 +0200
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:18
+  Rendered books/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2019-07-03 16:42:23 +0200
+Processing by BooksController#new as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `books' for nil:NilClass):
+  
+app/controllers/books_controller.rb:17:in `new'
+Started GET "/books/new" for 127.0.0.1 at 2019-07-03 16:42:34 +0200
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (3.8ms)
+  Rendered books/new.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 45ms (Views: 32.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2019-07-03 16:46:31 +0200
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (21.2ms)
+  Rendered books/new.html.erb within layouts/application (23.2ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 45ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2019-07-03 16:46:52 +0200
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0oS7mI3QQcWd0arKg8hLYQ2sDf6TkVdUocpra8fnIpeHMoJI1bPUBJwjyi6DQveDiEIDwu+sQxEns9C3qjVOBQ==", "book"=>{"name"=>"First Book", "published_date(1i)"=>"2019", "published_date(2i)"=>"7", "published_date(3i)"=>"3", "description"=>"une description ", "author"=>"andreas ", "page_number"=>"3"}, "commit"=>"Create Book"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `Book' for nil:NilClass):
+  
+app/controllers/books_controller.rb:27:in `create'
+Started GET "/books/new" for 127.0.0.1 at 2019-07-03 16:47:16 +0200
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (3.5ms)
+  Rendered books/new.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2019-07-03 16:50:44 +0200
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (3.5ms)
+  Rendered books/new.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 36ms (Views: 24.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2019-07-03 16:50:52 +0200
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8Z0urLvCH+eLp9c622fKykl0ksfYP6CYkyUUdLnXIpKkKxd846GKJopVt97b7XYozJqc+6QCtN0VXK+o1AVOAA==", "book"=>{"name"=>"First Book", "published_date(1i)"=>"2019", "published_date(2i)"=>"7", "published_date(3i)"=>"3", "description"=>"sfefsef", "author_name"=>"andreas arnolfo", "page_number"=>"1"}, "commit"=>"Create Book"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `Book' for nil:NilClass):
+  
+app/controllers/books_controller.rb:27:in `create'
+Started GET "/" for 127.0.0.1 at 2019-07-03 16:56:00 +0200
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:18
+  Rendered books/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 126ms (Views: 121.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-03 16:57:25 +0200
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:18
+  Rendered books/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 29ms (Views: 24.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-03 16:57:41 +0200
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:18
+  Rendered books/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/authors/index" for 127.0.0.1 at 2019-07-03 16:57:42 +0200
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  Rendered authors/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 34ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-03 16:58:49 +0200
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:18
+  Rendered books/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 25ms (Views: 22.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/authors/index" for 127.0.0.1 at 2019-07-03 16:58:51 +0200
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:1
+  Rendered authors/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+Completed 200 OK in 31ms (Views: 28.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-03 16:58:53 +0200
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:18
+  Rendered books/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 32ms (Views: 29.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-03 16:59:25 +0200
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:18
+  Rendered books/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 30ms (Views: 27.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/authors/index" for 127.0.0.1 at 2019-07-03 16:59:26 +0200
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:1
+  Rendered authors/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 27ms (Views: 24.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/authors/index" for 127.0.0.1 at 2019-07-03 16:59:34 +0200
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:1
+  Rendered authors/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/authors/new" for 127.0.0.1 at 2019-07-03 16:59:35 +0200
+Processing by AuthorsController#new as HTML
+  Rendering authors/new.html.erb within layouts/application
+  Rendered authors/new.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+Completed 200 OK in 39ms (Views: 28.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/authors/new" for 127.0.0.1 at 2019-07-03 17:03:10 +0200
+Processing by AuthorsController#new as HTML
+  Rendering authors/new.html.erb within layouts/application
+  Rendered authors/_form.html.erb (4.0ms)
+  Rendered authors/new.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 29ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authors/index" for 127.0.0.1 at 2019-07-03 17:03:12 +0200
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:1
+  Rendered authors/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 29ms (Views: 26.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/authors/new" for 127.0.0.1 at 2019-07-03 17:03:15 +0200
+Processing by AuthorsController#new as HTML
+  Rendering authors/new.html.erb within layouts/application
+  Rendered authors/_form.html.erb (4.0ms)
+  Rendered authors/new.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+Completed 200 OK in 45ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authors/new" for 127.0.0.1 at 2019-07-03 17:03:34 +0200
+Processing by AuthorsController#new as HTML
+  Rendering authors/new.html.erb within layouts/application
+  Rendered authors/_form.html.erb (122.1ms)
+  Rendered authors/new.html.erb within layouts/application (124.6ms)
+Completed 500 Internal Server Error in 132ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `text_date' for #<ActionView::Helpers::FormBuilder:0x00007fef9c693a00>
+Did you mean?  text_area):
+    23: 
+    24:   <div class="field">
+    25:     <%= form.label :author_birth %>
+    26:     <%= form.text_date :author_birth  %>
+    27:   </div>
+    28: 
+    29:   <div class="field">
+  
+app/views/authors/_form.html.erb:26:in `block in _app_views_authors__form_html_erb___1799267496292957720_70333592759140'
+app/views/authors/_form.html.erb:1:in `_app_views_authors__form_html_erb___1799267496292957720_70333592759140'
+app/views/authors/new.html.erb:3:in `_app_views_authors_new_html_erb___311553188220411146_70333592790920'
+Started GET "/authors/new" for 127.0.0.1 at 2019-07-03 17:04:28 +0200
+Processing by AuthorsController#new as HTML
+  Rendering authors/new.html.erb within layouts/application
+  Rendered authors/_form.html.erb (3.5ms)
+  Rendered authors/new.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 27ms (Views: 25.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/authors" for 127.0.0.1 at 2019-07-03 17:04:48 +0200
+Processing by AuthorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WOJoc99hP1v5zm1HMV+sb9/iQDiZg/AVtmF69e3ZO5UNVFGjhwKqmvg8DaMx1RCNWgxOBOW+5FAwGMEpgAtXBw==", "author"=>{"auhtor_name"=>"andreas", "author_city"=>"paris", "author_birth(1i)"=>"2019", "author_birth(2i)"=>"7", "author_birth(3i)"=>"3", "author_number_book"=>"5"}, "commit"=>"Create Author"}
+Unpermitted parameters: :auhtor_name, :author_birth(1i), :author_birth(2i), :author_birth(3i)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/authors_controller.rb:20
+  [1m[36mAuthor Create (0.4ms)[0m  [1m[32mINSERT INTO "authors" ("author_city", "author_number_book", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["author_city", "paris"], ["author_number_book", 5], ["created_at", "2019-07-03 15:04:48.810261"], ["updated_at", "2019-07-03 15:04:48.810261"]]
+  ↳ app/controllers/authors_controller.rb:20
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/authors_controller.rb:20
+Redirected to http://localhost:3000/authors/1
+Completed 302 Found in 6ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/authors/1" for 127.0.0.1 at 2019-07-03 17:04:48 +0200
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:51
+  Rendering authors/show.html.erb within layouts/application
+  Rendered authors/show.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+Completed 200 OK in 26ms (Views: 22.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/authors/index" for 127.0.0.1 at 2019-07-03 17:04:50 +0200
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:1
+  Rendered authors/index.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<Author:0x00007fefa4082c58>):
+    1: <% @authors.each do |author| %>
+    2:   <ul>
+    3:     <li><%= author.name %></li>
+    4:   </ul>
+    5: <% end %>
+    6: 
+  
+app/views/authors/index.html.erb:3:in `block in _app_views_authors_index_html_erb__2004464283867196811_70333606236960'
+app/views/authors/index.html.erb:1:in `_app_views_authors_index_html_erb__2004464283867196811_70333606236960'
+Started GET "/authors/index" for 127.0.0.1 at 2019-07-03 17:05:21 +0200
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:1
+  Rendered authors/index.html.erb within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<Author:0x00007fefa348a0e0>):
+    1: <% @authors.each do |author| %>
+    2:   <ul>
+    3:     <li><%= author.name %></li>
+    4:   </ul>
+    5: <% end %>
+    6: 
+  
+app/views/authors/index.html.erb:3:in `block in _app_views_authors_index_html_erb__2004464283867196811_70333606707860'
+app/views/authors/index.html.erb:1:in `_app_views_authors_index_html_erb__2004464283867196811_70333606707860'
+Started GET "/authors/index" for 127.0.0.1 at 2019-07-03 17:06:46 +0200
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:1
+  Rendered authors/index.html.erb within layouts/application (11.3ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `auhtor_name' for #<Author:0x00007fef9c6525f0>
+Did you mean?  author_name
+               author_name=
+               author_name?):
+    1: <% @authors.each do |author| %>
+    2:   <ul>
+    3:     <li><%= author.auhtor_name %></li>
+    4:   </ul>
+    5: <% end %>
+    6: 
+  
+app/views/authors/index.html.erb:3:in `block in _app_views_authors_index_html_erb__2004464283867196811_70333613213680'
+app/views/authors/index.html.erb:1:in `_app_views_authors_index_html_erb__2004464283867196811_70333613213680'
+Started GET "/authors/index" for 127.0.0.1 at 2019-07-03 17:07:02 +0200
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:1
+  Rendered authors/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-03 17:07:05 +0200
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:18
+  Rendered books/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 28ms (Views: 25.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/authors/index" for 127.0.0.1 at 2019-07-03 17:07:05 +0200
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:1
+  Rendered authors/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+Completed 200 OK in 34ms (Views: 31.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/authors/new" for 127.0.0.1 at 2019-07-03 17:07:06 +0200
+Processing by AuthorsController#new as HTML
+  Rendering authors/new.html.erb within layouts/application
+  Rendered authors/_form.html.erb (3.6ms)
+  Rendered authors/new.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 34ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/authors" for 127.0.0.1 at 2019-07-03 17:07:10 +0200
+Processing by AuthorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AA7SItnzoLPw/3sEkZ3t/+GGNy4H8DuLLeKXdey2yXOySxKUqWEjljZSlTMrXrCy1S0wqfVLKuypBLROUCKJaA==", "author"=>{"auhtor_name"=>"andreas", "author_city"=>"dzqzqdqzd", "author_birth(1i)"=>"2019", "author_birth(2i)"=>"7", "author_birth(3i)"=>"3", "author_number_book"=>"zqdqzd"}, "commit"=>"Create Author"}
+Unpermitted parameters: :auhtor_name, :author_birth(1i), :author_birth(2i), :author_birth(3i)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/authors_controller.rb:20
+  [1m[36mAuthor Create (0.6ms)[0m  [1m[32mINSERT INTO "authors" ("author_city", "author_number_book", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["author_city", "dzqzqdqzd"], ["author_number_book", 0], ["created_at", "2019-07-03 15:07:10.685051"], ["updated_at", "2019-07-03 15:07:10.685051"]]
+  ↳ app/controllers/authors_controller.rb:20
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/authors_controller.rb:20
+Redirected to http://localhost:3000/authors/2
+Completed 302 Found in 6ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/authors/2" for 127.0.0.1 at 2019-07-03 17:07:10 +0200
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:51
+  Rendering authors/show.html.erb within layouts/application
+  Rendered authors/show.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 29ms (Views: 26.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/authors/index" for 127.0.0.1 at 2019-07-03 17:07:14 +0200
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:1
+  Rendered authors/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 30ms (Views: 27.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-03 17:07:15 +0200
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:18
+  Rendered books/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 28ms (Views: 25.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/authors/index" for 127.0.0.1 at 2019-07-03 17:07:16 +0200
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:1
+  Rendered authors/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+Completed 200 OK in 31ms (Views: 28.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/authors/index" for 127.0.0.1 at 2019-07-03 17:11:18 +0200
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:1
+  Rendered authors/index.html.erb within layouts/application (9.1ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 36ms (Views: 31.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/authors/new" for 127.0.0.1 at 2019-07-03 17:11:19 +0200
+Processing by AuthorsController#new as HTML
+  Rendering authors/new.html.erb within layouts/application
+  Rendered authors/_form.html.erb (11.4ms)
+  Rendered authors/new.html.erb within layouts/application (13.6ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 41ms (Views: 37.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/authors" for 127.0.0.1 at 2019-07-03 17:11:25 +0200
+Processing by AuthorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WgbafuECdtHyDep74tPTa9pptlQJdD4zjOziSUFKVi7oQxrIkZD19DSgBExYEI4m7sKx0/vPL1QICsFy/d4WNQ==", "author"=>{"auhtor_name"=>"andreas", "author_city"=>"paris", "author_birth(1i)"=>"2019", "author_birth(2i)"=>"7", "author_birth(3i)"=>"3", "author_number_book"=>"5"}, "commit"=>"Create Author"}
+Unpermitted parameters: :auhtor_name, :author_birth(1i), :author_birth(2i), :author_birth(3i)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/authors_controller.rb:20
+  [1m[36mAuthor Create (0.6ms)[0m  [1m[32mINSERT INTO "authors" ("author_city", "author_number_book", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["author_city", "paris"], ["author_number_book", 5], ["created_at", "2019-07-03 15:11:25.807390"], ["updated_at", "2019-07-03 15:11:25.807390"]]
+  ↳ app/controllers/authors_controller.rb:20
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/authors_controller.rb:20
+Redirected to http://localhost:3000/authors/3
+Completed 302 Found in 7ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/authors/3" for 127.0.0.1 at 2019-07-03 17:11:25 +0200
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:51
+  Rendering authors/show.html.erb within layouts/application
+  Rendered authors/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 28ms (Views: 23.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/authors/3/edit" for 127.0.0.1 at 2019-07-03 17:11:30 +0200
+Processing by AuthorsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:51
+  Rendering authors/edit.html.erb within layouts/application
+  Rendered authors/edit.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 28ms (Views: 25.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-03 17:11:33 +0200
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:18
+  Rendered books/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 32ms (Views: 28.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/authors/index" for 127.0.0.1 at 2019-07-03 17:11:34 +0200
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:1
+  Rendered authors/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+Completed 200 OK in 30ms (Views: 27.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/authors/index" for 127.0.0.1 at 2019-07-03 17:12:22 +0200
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:1
+  Rendered authors/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+Completed 200 OK in 31ms (Views: 29.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/authors/index" for 127.0.0.1 at 2019-07-03 17:12:24 +0200
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:1
+  Rendered authors/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 26ms (Views: 23.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/authors/index" for 127.0.0.1 at 2019-07-03 17:12:39 +0200
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  Rendered authors/index.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @author.each do |author| %>
+    2: 
+    3:     <p><%= author.author_name %></p>
+    4: 
+  
+app/views/authors/index.html.erb:1:in `_app_views_authors_index_html_erb__2004464283867196811_70333606862360'
+Started GET "/authors/index" for 127.0.0.1 at 2019-07-03 17:12:44 +0200
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:1
+  Rendered authors/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/authors/index" for 127.0.0.1 at 2019-07-03 17:13:15 +0200
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:1
+  Rendered authors/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+Completed 200 OK in 39ms (Views: 36.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/authors/new" for 127.0.0.1 at 2019-07-03 17:13:17 +0200
+Processing by AuthorsController#new as HTML
+  Rendering authors/new.html.erb within layouts/application
+  Rendered authors/_form.html.erb (6.5ms)
+  Rendered authors/new.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 48ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/authors" for 127.0.0.1 at 2019-07-03 17:13:27 +0200
+Processing by AuthorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Qk1Ybohh6bCZriNiSSeLTNmCR7YwNR7eWWDM7bKSkTzwCJjY+PNqlV8DzVXz5NYB7SlAMcKOD7ndhu/WDgbRJw==", "author"=>{"auhtor_name"=>"andreas3", "author_city"=>"paris", "author_birth(1i)"=>"2019", "author_birth(2i)"=>"7", "author_birth(3i)"=>"3", "author_number_book"=>"45"}, "commit"=>"Create Author"}
+Unpermitted parameters: :auhtor_name, :author_birth(1i), :author_birth(2i), :author_birth(3i)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/authors_controller.rb:20
+  [1m[36mAuthor Create (1.0ms)[0m  [1m[32mINSERT INTO "authors" ("author_city", "author_number_book", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["author_city", "paris"], ["author_number_book", 45], ["created_at", "2019-07-03 15:13:27.595084"], ["updated_at", "2019-07-03 15:13:27.595084"]]
+  ↳ app/controllers/authors_controller.rb:20
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/authors_controller.rb:20
+Redirected to http://localhost:3000/authors/4
+Completed 302 Found in 8ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/authors/4" for 127.0.0.1 at 2019-07-03 17:13:27 +0200
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:51
+  Rendering authors/show.html.erb within layouts/application
+  Rendered authors/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 46ms (Views: 41.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/authors/4" for 127.0.0.1 at 2019-07-03 17:14:32 +0200
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:51
+  Rendering authors/show.html.erb within layouts/application
+  Rendered authors/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 25ms (Views: 21.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/authors/4" for 127.0.0.1 at 2019-07-03 17:14:33 +0200
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:51
+  Rendering authors/show.html.erb within layouts/application
+  Rendered authors/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 27ms (Views: 24.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/authors/4/edit" for 127.0.0.1 at 2019-07-03 17:14:34 +0200
+Processing by AuthorsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:51
+  Rendering authors/edit.html.erb within layouts/application
+  Rendered authors/_form.html.erb (225.2ms)
+  Rendered authors/edit.html.erb within layouts/application (227.1ms)
+Completed 500 Internal Server Error in 234ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `author' for #<#<Class:0x00007fefa3259898>:0x00007fefa1994d80>
+Did you mean?  @author):
+    1: <%= form_with(model: author, local: true) do |form| %>
+    2:   <% if author.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(author.errors.count, "error") %> prohibited this book from being saved:</h2>
+  
+app/views/authors/_form.html.erb:1:in `_app_views_authors__form_html_erb___1799267496292957720_70333592513900'
+app/views/authors/edit.html.erb:1:in `_app_views_authors_edit_html_erb__1307474142046350452_70333592546520'
+Started GET "/authors/4" for 127.0.0.1 at 2019-07-03 17:14:38 +0200
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:51
+  Rendering authors/show.html.erb within layouts/application
+  Rendered authors/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 28ms (Views: 24.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/authors/index" for 127.0.0.1 at 2019-07-03 17:14:39 +0200
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:1
+  Rendered authors/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 30ms (Views: 27.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/authors/new" for 127.0.0.1 at 2019-07-03 17:14:40 +0200
+Processing by AuthorsController#new as HTML
+  Rendering authors/new.html.erb within layouts/application
+  Rendered authors/_form.html.erb (4.3ms)
+  Rendered authors/new.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 45ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/authors" for 127.0.0.1 at 2019-07-03 17:14:51 +0200
+Processing by AuthorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BbSyghLd2Bon2aD1KqD1z3fdRhwpx4cC6gillRzDJWe38XI0Yk9bP+F0TsKQY6iCQ3ZBm9t8lmVu7oauoFdlfA==", "author"=>{"author_name"=>"andreas", "author_city"=>"Pairs", "author_birth(1i)"=>"2019", "author_birth(2i)"=>"7", "author_birth(3i)"=>"3", "author_number_book"=>"45"}, "commit"=>"Create Author"}
+Unpermitted parameters: :author_birth(1i), :author_birth(2i), :author_birth(3i)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/authors_controller.rb:20
+  [1m[36mAuthor Create (0.6ms)[0m  [1m[32mINSERT INTO "authors" ("author_name", "author_city", "author_number_book", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["author_name", "andreas"], ["author_city", "Pairs"], ["author_number_book", 45], ["created_at", "2019-07-03 15:14:51.373462"], ["updated_at", "2019-07-03 15:14:51.373462"]]
+  ↳ app/controllers/authors_controller.rb:20
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/authors_controller.rb:20
+Redirected to http://localhost:3000/authors/5
+Completed 302 Found in 7ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/authors/5" for 127.0.0.1 at 2019-07-03 17:14:51 +0200
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:51
+  Rendering authors/show.html.erb within layouts/application
+  Rendered authors/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+Completed 200 OK in 33ms (Views: 29.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/authors/index" for 127.0.0.1 at 2019-07-03 17:14:53 +0200
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:1
+  Rendered authors/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 29ms (Views: 26.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/authors/index" for 127.0.0.1 at 2019-07-03 17:15:14 +0200
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:1
+  Rendered authors/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 28ms (Views: 25.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/authors/new" for 127.0.0.1 at 2019-07-03 17:15:54 +0200
+Processing by AuthorsController#new as HTML
+  Rendering authors/new.html.erb within layouts/application
+  Rendered authors/_form.html.erb (3.6ms)
+  Rendered authors/new.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 35ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/authors" for 127.0.0.1 at 2019-07-03 17:16:10 +0200
+Processing by AuthorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yxKIx4fQ/eB5N73sGSP2JsnKgUWPa1MP/CySmoLs4eN5V0hx90J+xb+aU9uj4Ktr/WGGwn3QQmh4yrGhPnih+A==", "author"=>{"author_name"=>"valentin", "author_city"=>"paris", "author_birth(1i)"=>"2014", "author_birth(2i)"=>"10", "author_birth(3i)"=>"19", "author_number_book"=>"45"}, "commit"=>"Create Author"}
+Unpermitted parameters: :author_birth(1i), :author_birth(2i), :author_birth(3i)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/authors_controller.rb:20
+  [1m[36mAuthor Create (1.0ms)[0m  [1m[32mINSERT INTO "authors" ("author_name", "author_city", "author_number_book", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["author_name", "valentin"], ["author_city", "paris"], ["author_number_book", 45], ["created_at", "2019-07-03 15:16:10.414984"], ["updated_at", "2019-07-03 15:16:10.414984"]]
+  ↳ app/controllers/authors_controller.rb:20
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/authors_controller.rb:20
+Redirected to http://localhost:3000/authors/6
+Completed 302 Found in 7ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/authors/6" for 127.0.0.1 at 2019-07-03 17:16:10 +0200
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:51
+  Rendering authors/show.html.erb within layouts/application
+  Rendered authors/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 28ms (Views: 25.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/authors/6" for 127.0.0.1 at 2019-07-03 17:17:42 +0200
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:51
+  Rendering authors/show.html.erb within layouts/application
+  Rendered authors/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 35ms (Views: 22.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/authors/6" for 127.0.0.1 at 2019-07-03 17:17:44 +0200
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:51
+  Rendering authors/show.html.erb within layouts/application
+  Rendered authors/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/authors/index" for 127.0.0.1 at 2019-07-03 17:17:46 +0200
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:1
+  Rendered authors/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 30ms (Views: 27.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/authors/index" for 127.0.0.1 at 2019-07-03 17:21:14 +0200
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:16
+  Rendered authors/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/authors/1" for 127.0.0.1 at 2019-07-03 17:21:20 +0200
+Processing by AuthorsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"w4RZknOFAItK40dz2496vX7j+QGtj0vZO5RFvAKYQ6iWMmBCK+aVSksRJ5fbBcZf+w33PdGyX5y97f5gb0ovOg==", "id"=>"1"}
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:51
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/authors_controller.rb:41
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."author_id" = ?[0m  [["author_id", 1]]
+  ↳ app/controllers/authors_controller.rb:41
+  [1m[36mAuthor Destroy (0.4ms)[0m  [1m[31mDELETE FROM "authors" WHERE "authors"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/authors_controller.rb:41
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/authors_controller.rb:41
+Redirected to http://localhost:3000/authors
+Completed 302 Found in 49ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2019-07-03 17:21:20 +0200
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:16
+  Rendered authors/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 30ms (Views: 26.9ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/authors/2" for 127.0.0.1 at 2019-07-03 17:21:22 +0200
+Processing by AuthorsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qdbWaemwyQOoVjzN8vLQv1edTCF995cCADjxsk3v9KT8YO+5sdNcwqmkXCnyeGxd0nNCHQHKg0eGQUpuID2YNg==", "id"=>"2"}
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:51
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/authors_controller.rb:41
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."author_id" = ?[0m  [["author_id", 2]]
+  ↳ app/controllers/authors_controller.rb:41
+  [1m[36mAuthor Destroy (0.4ms)[0m  [1m[31mDELETE FROM "authors" WHERE "authors"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/authors_controller.rb:41
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/authors_controller.rb:41
+Redirected to http://localhost:3000/authors
+Completed 302 Found in 12ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2019-07-03 17:21:22 +0200
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:16
+  Rendered authors/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 28ms (Views: 24.5ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/authors/3" for 127.0.0.1 at 2019-07-03 17:21:24 +0200
+Processing by AuthorsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"f5rXCf+BcSA4Jg0zDZ1ExFC+QfEgdjaNPl4Epbz6L+cqLO7Zp+Lk4TnUbdcNF/gm1VBPzVxLIsi4J7950ShDdQ==", "id"=>"3"}
+  [1m[36mAuthor Load (0.4ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:51
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/authors_controller.rb:41
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."author_id" = ?[0m  [["author_id", 3]]
+  ↳ app/controllers/authors_controller.rb:41
+  [1m[36mAuthor Destroy (0.3ms)[0m  [1m[31mDELETE FROM "authors" WHERE "authors"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/authors_controller.rb:41
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/authors_controller.rb:41
+Redirected to http://localhost:3000/authors
+Completed 302 Found in 10ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2019-07-03 17:21:24 +0200
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:16
+  Rendered authors/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 28ms (Views: 25.2ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/authors/4" for 127.0.0.1 at 2019-07-03 17:21:26 +0200
+Processing by AuthorsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7dECsYOULf2E/QmL7Nvdd22aCKL2OVhsZD+HrIKQ1xy4Zzth2/e4PIUPaW/sUWGV6HQGnooETCniRjxw70K7jg==", "id"=>"4"}
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:51
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/authors_controller.rb:41
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."author_id" = ?[0m  [["author_id", 4]]
+  ↳ app/controllers/authors_controller.rb:41
+  [1m[36mAuthor Destroy (0.3ms)[0m  [1m[31mDELETE FROM "authors" WHERE "authors"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/authors_controller.rb:41
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/authors_controller.rb:41
+Redirected to http://localhost:3000/authors
+Completed 302 Found in 6ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2019-07-03 17:21:26 +0200
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:16
+  Rendered authors/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/authors/5" for 127.0.0.1 at 2019-07-03 17:21:32 +0200
+Processing by AuthorsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ZO4M5FNArTgilkWTXac7xbspUjqWmYLFcga+sYG/UR4xWDU0CyM4+SNkJXddLYcnPsdcBuqkloD0fwVt7G09jA==", "id"=>"5"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/authors_controller.rb:51
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/authors_controller.rb:41
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."author_id" = ?[0m  [["author_id", 5]]
+  ↳ app/controllers/authors_controller.rb:41
+  [1m[36mAuthor Destroy (0.3ms)[0m  [1m[31mDELETE FROM "authors" WHERE "authors"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/authors_controller.rb:41
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/authors_controller.rb:41
+Redirected to http://localhost:3000/authors
+Completed 302 Found in 12ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2019-07-03 17:21:32 +0200
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  ↳ app/views/authors/index.html.erb:16
+  Rendered authors/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 31ms (Views: 27.8ms | ActiveRecord: 0.3ms)
+
+
